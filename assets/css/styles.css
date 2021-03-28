@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+    overflow-x: hidden;
+    font-family: "Lato", sans-serif ;
+    color: #151515;
+     margin: 0;
+    padding: 0;
+}
+
+.row, .container-fluid {
+margin-left: 0px!important;
+margin-right: 0px!important;
+}
+
+/*NAVBAR CSS*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand img{
+    width: 3rem;
+}
+
+.navbar-nav li{
+    padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:#e3e3e3 ;
+    padding-top: 0.8rem;
+    transition: 0.5s ease-out;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #ff6200;
+}
+.fixed-top  {
+ -webkit-backface-visibility: hidden;
+ backface-visibility: hidden;
+}
+
+/*LANDING CSS*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ background-image:
+    linear-gradient(to bottom, rgb(35, 37, 38, 0.52),rgb(255, 98, 0, 0.73)),
+    url(/assets/images/landing2.jpg);
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.fixed-background {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999!important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.quote{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    color: #dddddd;
+    text-transform: uppercase;
+    padding: 0 1.25rem;
+}
+
+.quote h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem black ;
+    padding-bottom: 1rem;
+}
+
+.btn-lg{
+    border-style: none;
+    border-radius: 0;
+    background-color: #dddddd;
+    color: #ff6200;
+    transition: 0.5s ease-out;
+    box-shadow: 0.1rem 0.1rem 0.8rem black;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.btn-lg:hover{
+    background-color: #ff6200;
+    color: #435560;
+}
+/* LANDING CSS */
+
+/* CLASSES CSS */
+
+.jumbotron{
+    border-radius: 0;
+}
+
+.class img{
+    width: 3.5rem;
+}
+
+.spacing {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.spacing h2 {
+    font-size: 2.4rem;
+    padding-bottom: 2rem;
+  }
+
+/* CLASSES CSS */
+
+/*ABOUT CSS */
+
+#about{
+    background: linear-gradient(to right, rgb(35, 37, 38, 0.8), rgb(65, 67, 69, 0.8));
+    padding: 1.2rem 0;
+}
+
+#about img{
+    border-radius: 0.6rem;
+    box-shadow:0.1rem 0.1rem 0.8rem black ;
+}
+
+.lead-p{
+  font-weight: bold;
+}
+
+small{
+    font-weight: bold;
+}
+
+span i{
+    font-size: 1.2rem;
+    padding: 1.2rem 0.6rem 0 0.6rem;
+    transition: 0.5s ease-out;
+}
+
+span i:hover{
+     color: #ff6200;
+}
+
+.lead-p{
+    padding-bottom: 1.3rem;
+}
+
+/*ABOUT CSS */
+
+/*EXPERIENCES CSS */
+
+#experiences{
+    padding: 6.25rem 0;
+}
+
+#experiences .col-md-4{
+     padding: 0.6rem 1.8rem;
+}
+
+#experiences img{
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 50%;
+    margin-left: -1.8rem;
+    margin-top: -2.5rem;
+    border: 0.2rem solid #ff6200;
+    margin-bottom: 1.8rem;
+}
+
+#experiences span{
+    color: #ff6200;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#experiences h1{
+    margin-bottom:1.2rem ;
+    color: #ff6200;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#experiences p{
+    padding-bottom:1.8rem ;
+    
+}
+.review{
+    font-size: 1rem;
+    padding: 0.6rem 0.6rem 0.6rem 1.8rem;
+    border-radius: 0.6rem;
+    box-shadow:  0.1rem 0.1rem 0.8rem black;
+}
+
+#experiences .middle{
+    margin: -1.8rem 0;
+}
+/*EXPERIENCES CSS */
+
+/*PRICING CSS */
+
+
+
+/*PRICING CSS */
+
+
+/*CONTACT CSS */
+#contact{
+    background: linear-gradient(to right, rgb(35, 37, 38, 0.8), rgb(65, 67, 69, 0.8)),
+    url(/assets/images/pexels-victor-freitas-949132.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2.5rem 0;
+}
+
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.contact-form{
+    max-width: 37.5rem;
+    margin: auto;
+    padding: 0 0.6rem;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    border: 0;
+    background:black;
+    padding: 1.2rem 2.5rem;
+    outline: none;
+    color: #435560;
+    font-weight: bold;
+    transition: 0.5s ease-out;
+}
+
+.contact-form-text:hover{
+    box-shadow: 0 0 0.6rem 0.2rem #ff6200;
+}
+
+textarea .contact-form-text{
+    resize: none;
+    height: 7.5rem;
+}
+
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: #435560;
+    color: #ff6200;
+    padding: 0.8rem 2.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.contact-form-btn:hover{
+    background: #ff6200;
+    color: #435560;
+}
+/*CONTACT CSS */
+
+/*FOOTER CSS */
+
+/*FOOTER CSS */
