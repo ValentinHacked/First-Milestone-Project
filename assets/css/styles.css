@@ -8,7 +8,7 @@ html {
 body{
     overflow-x: hidden;
     font-family: "Lato", sans-serif ;
-    color: #151515;
+    color: #0D0D0D;
      margin: 0;
     padding: 0;
 }
@@ -24,7 +24,7 @@ margin-right: 0px!important;
     font-weight: 700;
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand img{
@@ -43,7 +43,7 @@ margin-right: 0px!important;
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
-    color: #ff6200;
+    color: #73020C;
 }
 .fixed-top  {
  -webkit-backface-visibility: hidden;
@@ -51,6 +51,9 @@ margin-right: 0px!important;
 }
 
 /*LANDING CSS*/
+
+
+
 .landing {
   position: relative;
   width: 100%;
@@ -74,7 +77,7 @@ margin-right: 0px!important;
   width: 100%;
   height: 100%;
  background-image:
-    linear-gradient(to bottom, rgb(35, 37, 38, 0.52),rgb(255, 98, 0, 0.73)),
+    linear-gradient(to bottom, rgb(35, 37, 38, 0.52),#73020C),
     url(/assets/images/landing2.jpg);
   background-size: cover;
   background-position: center center;
@@ -131,10 +134,11 @@ margin-right: 0px!important;
 }
 
 .btn-lg{
+    padding: 0.6rem 1.3rem;
     border-style: none;
     border-radius: 0;
     background-color: #dddddd;
-    color: #ff6200;
+    color: #590202;
     transition: 0.5s ease-out;
     box-shadow: 0.1rem 0.1rem 0.8rem black;
     font-size: 1.3rem;
@@ -142,66 +146,159 @@ margin-right: 0px!important;
 }
 
 .btn-lg:hover{
-    background-color: #ff6200;
+    background-color: #590202;
     color: #435560;
+}
+
+@media(max-width:767px){
+    .quote{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    color: #dddddd;
+    text-transform: uppercase;
+    padding: 0 1.25rem;
+}
+
+.quote h1{
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem black ;
+    padding-bottom: 0.5rem;
+}
+
+.btn-lg{
+    padding: 0.5rem 1rem;
+    border-style: none;
+    border-radius: 0;
+    background-color: #dddddd;
+    color: #590202;
+    transition: 0.5s ease-out;
+    box-shadow: 0.1rem 0.1rem 0.8rem black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 }
 /* LANDING CSS */
 
 /* CLASSES CSS */
 
-.jumbotron{
-    border-radius: 0;
+#classes{
+      background: linear-gradient(to right, rgb(35, 37, 38, 0.8), rgb(65, 67, 69, 0.8)),
+    url(/assets/images/pexels-victor-freitas-949132.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
-.class img{
-    width: 3.5rem;
+.classes{
+   
+    padding: 5.6rem auto;
+    text-align: center;
 }
 
-.spacing {
-  width: 75%;
-  margin: 1.5rem auto;
-  padding-top: 2rem;
+#classes h1{
+    padding-top: 0.6rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0.1rem 0.8rem black;
+
 }
-.spacing h2 {
-    font-size: 2.4rem;
-    padding-bottom: 2rem;
-  }
+
+#classes h3, p{
+    font-weight: bold;
+    color:#0D0D0D;
+}
+
+#classes h3{
+    font-weight: bold;
+    color: #73020C;
+    text-transform: uppercase;
+    text-shadow: 0.1rem 0.1rem 0.8rem black;
+    padding-bottom: 1rem;
+}
+
+#classes span{
+    font-style: italic;
+    color:#BF0B0B;
+     text-shadow: 0.1rem 0.1rem 0.8rem black;
+}
+#classes .col-md-4{
+    transition: 0.5s ease-out;
+}
+
+#classes .col-md-4:hover{
+box-shadow: 0.1rem 0.1rem 0.8rem black;
+}
+
+.icon img{
+    width: 6.5rem;
+    height: 6.5rem;
+    margin: 1.2rem auto;
+    padding: 1.2rem;
+}
+
 
 /* CLASSES CSS */
 
 /*ABOUT CSS */
-
 #about{
-    background: linear-gradient(to right, rgb(35, 37, 38, 0.8), rgb(65, 67, 69, 0.8));
-    padding: 1.2rem 0;
+    box-sizing: border-box;
+    
 }
 
-#about img{
-    border-radius: 0.6rem;
-    box-shadow:0.1rem 0.1rem 0.8rem black ;
-}
-
-.lead-p{
-  font-weight: bold;
-}
-
-small{
+#about h1{
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-span i{
-    font-size: 1.2rem;
-    padding: 1.2rem 0.6rem 0 0.6rem;
-    transition: 0.5s ease-out;
+#about .row{
+    display:flex;
+    flex-wrap:wrap;
+    width: 100%;
 }
 
-span i:hover{
-     color: #ff6200;
+#about .row .column{
+    flex: 33.3%;
+    width: auto;
+    overflow: hidden;
+    padding: 0.2rem;
+    height: 100%;
 }
 
-.lead-p{
-    padding-bottom: 1.3rem;
+#about .row .column img{
+    margin-top:2% ;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+   filter: grayscale(1) brightness(0.5);
+   border-radius:0.3rem;
+   transition: 0.5s linear;
 }
+
+#about .row .column img:hover{
+filter: grayscale(0) brightness(1);
+}
+
+@media only screen and (max-width:800px){
+    #about .row .column{
+        flex:50%;
+}
+}
+
+@media only screen and (max-width:680px){
+    #about .row .column{
+        flex:100%;
+}
+}
+
 
 /*ABOUT CSS */
 
@@ -209,6 +306,11 @@ span i:hover{
 
 #experiences{
     padding: 6.25rem 0;
+     background: linear-gradient(to right, rgb(35, 37, 38, 0.8), rgb(65, 67, 69, 0.8)),
+    url(/assets/images/pexels-victor-freitas-949132.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 #experiences .col-md-4{
@@ -257,7 +359,146 @@ span i:hover{
 
 /*PRICING CSS */
 
+#price{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background: linear-gradient(to right, rgb(35, 37, 38, 0.8), rgb(65, 67, 69, 0.8)),
+    url(/assets/images/equipment3.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+.single-pricing{
+    position: relative;
+    text-align: center;
+    background-color: #435560;
+    color: #e3e3e3;
+    margin: 0 1.2rem ;
+    padding: 1.8rem;
+    border-radius: 0.2rem;
+    box-shadow: 0.1rem 0.1rem 0.8rem black;
+}
+
+.head-text{
+    background-color: transparent;
+    border-bottom: 0;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+.head-text h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: #ff6200;
+}
+
+.price-area .price-area span{
+    font-weight: 600;
+}
+.price-area{
+    position: relative;
+    padding: 0.6rem 0;
+    color: #fff;
+    font: 300;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.price-area span.duration{
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1.2rem 0 0 0.2rem;
+    text-align: center;
+    color: #ff6200;
+    letter-spacing: 0.1rem;
+    color: black;
+}
+
+.price-area::after, .feature-area{
+    border: 0;
+}
+
+.feature-area ul{
+    margin: 0;
+    padding: 0.9rem 0;
+    list-style: none;
+}
+
+.feature-area li{
+    padding: 0.4rem 0;
+    font-size: 0.9rem;
+}
+
+.btn-area{
+    padding: 0.9rem 1.8rem;
+}
+
+.btn-area a{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin: 0.3rem;
+    padding: 0 1.3rem;
+    font-size: 0.9rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background-color: #ff6200;
+    color: #e3e3e3;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: none;
+}
+
+.label-area{
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: -0.1rem;
+    right: -0.1rem;
+    text-align:center;
+    border-top-right-radius: 0.2rem;
+    background-color: #ff6200;
+}
+
+.label-area span{
+    position: absolute;
+    top: 1.3rem;
+    right: 0.2rem;
+    text-transform: uppercase;
+    transform: rotate(45deg);
+    font-weight: 700;
+    font-size: 0.6rem;
+    color: #e3e3e3;
+    letter-spacing: 0.1rem;
+}
+
+.label-area:before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5rem 0 0 5rem;
+    border-color: transparent transparent transparent #435560;
+}
+
+@media (max-width: 767px){
+    .head-text h3{
+        font-size: 1.2rem;
+    }
+
+    .single-pricing{
+        margin-bottom: 1.8rem;
+    }
+}
 
 /*PRICING CSS */
 
@@ -299,7 +540,7 @@ span i:hover{
 }
 
 .contact-form-text:hover{
-    box-shadow: 0 0 0.6rem 0.2rem #ff6200;
+    box-shadow: 0 0 0.6rem 0.2rem #BF0B0B;
 }
 
 textarea .contact-form-text{
@@ -311,19 +552,58 @@ textarea .contact-form-text{
     float: right;
     border: 0;
     background: #435560;
-    color: #ff6200;
+    color: #BF0B0B;
     padding: 0.8rem 2.1rem;
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s ease-out;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .contact-form-btn:hover{
-    background: #ff6200;
+    background: #BF0B0B;
     color: #435560;
 }
 /*CONTACT CSS */
 
 /*FOOTER CSS */
+footer img{
+    width: 3.5rem;
+    margin: 1.5rem 0;
+}
 
+footer{
+    background: linear-gradient(#73020C, #590202);
+    color: #e3e3e3;
+    padding-top: 2.5rem ;
+    padding-bottom: 2.5rem ;
+}
+
+footer a{
+    color: #e3e3e3;
+}
+
+footer a i{
+    font-size: 1.6rem;
+    margin: 1.2rem 0.5rem 0 0;
+}
+
+footer a i:hover{
+ color: #BF0B0B !important;
+}
+
+hr.socket{
+    width:100% ;
+    border-top: 0.2rem solid #0D0D0D;
+    margin-top: 3rem;
+}
+
+.name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e3e3e3;
+    font-style: italic;
+    text-shadow: 0.1rem 0.1rem 0.8rem black; ;
+}
 /*FOOTER CSS */
