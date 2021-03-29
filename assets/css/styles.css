@@ -188,7 +188,7 @@ margin-right: 0px!important;
 /* CLASSES CSS */
 
 #classes{
-      background: linear-gradient(to right, rgb(35, 37, 38, 0.8), rgb(65, 67, 69, 0.8)),
+    background:linear-gradient(to right, rgb(35, 37, 38, 0.8), rgb(65, 67, 69, 0.8)),
     url(/assets/images/pexels-victor-freitas-949132.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -506,7 +506,7 @@ filter: grayscale(0) brightness(1);
 /*CONTACT CSS */
 #contact{
     background: linear-gradient(to right, rgb(35, 37, 38, 0.8), rgb(65, 67, 69, 0.8)),
-    url(/assets/images/pexels-victor-freitas-949132.jpg) no-repeat center;
+    url("/assets/images/pexels-victor-freitas-949132.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     padding: 2.5rem 0;
